@@ -2,7 +2,7 @@ import { Test, TestingModule } from '@nestjs/testing';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 /**
- * Unit & E2E Testing with Jest for app
+ * Unit & E2E Testing with Jest for app module
  */
 describe('AppController', () => {
   let appController: AppController;

@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
 /**
- Business logic for app
+ Business logic for app module
   - same service provider in module
  */
 @Injectable()

@@ -1,7 +1,7 @@
 import { Controller, Get } from '@nestjs/common';
 import { AppService } from './app.service';
 /**
- * Routing logic for app
+ * Routing logic for app module
  */
 @Controller()
 export class AppController {

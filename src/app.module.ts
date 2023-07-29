@@ -3,11 +3,12 @@ import { ConfigModule } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
+import { FeedModule } from './feed/feed.module';
 /**
   @Module:
    imports - env vars using config, db params using typeorm
-   controls - app controller for routing
-   providers - app service for busing logic
+   controls - app module controller for routing
+   providers - app module service for busing logic
  */
 @Module({
   imports: [
@@ -22,6 +23,7 @@ import { AppService } from './app.service';
       autoLoadEntities: true,
       synchronize: true,
     }),
+    FeedModule,
   ],
   controllers: [AppController],
   providers: [AppService],
