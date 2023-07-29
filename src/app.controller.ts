@@ -1,12 +1,15 @@
 import { Controller, Get } from '@nestjs/common';
 import { AppService } from './app.service';
-
+/**
+ * Routing logic for app
+ */
 @Controller()
 export class AppController {
   constructor(private readonly appService: AppService) {}
 
+  /* API for home page */
   @Get()
-  getHello(): string {
-    return this.appService.getHello();
+  home(): string {
+    return this.appService.home();
   }
 }

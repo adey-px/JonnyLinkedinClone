@@ -1,10 +1,14 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import { Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
-
+/**
+  @Module:
+   imports - env vars using config, db params using typeorm
+   controls - app controller for routing
+   providers - app service for busing logic
+ */
 @Module({
   imports: [
     ConfigModule.forRoot({ isGlobal: true }),
